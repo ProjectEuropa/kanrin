@@ -11,4 +11,8 @@ class Todo extends Model
     protected $fillable = [
         'id', 'list',
     ];
+    public function user() {
+        return $this->belongTo('App\user');
+    }
+    //
 }
